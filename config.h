@@ -40,10 +40,10 @@ static const Key keys[] = {
 	{ MODKEY|ALTKEY,        XK_Return, focusonce,   { 0 } },
 	{ MODKEY|ALTKEY,        XK_Return, spawn,       { 0 } },
 
-	/* { MODKEY|ALTKEY,        XK_l,      rotate,      { .i = +1 } }, */
-	/* { MODKEY|ALTKEY,        XK_h,      rotate,      { .i = -1 } }, */
-	{ MODKEY|ALTKEY,        XK_h,      movetab,     { .i = -1 } },
-	{ MODKEY|ALTKEY,        XK_l,      movetab,     { .i = +1 } },
+	{ MODKEY|ALTKEY,        XK_l,      rotate,      { .i = +1 } },
+	{ MODKEY|ALTKEY,        XK_h,      rotate,      { .i = -1 } },
+	{ MODKEY|ALTKEY|ShiftMask, XK_h,      movetab,     { .i = -1 } },
+	{ MODKEY|ALTKEY|ShiftMask, XK_l,      movetab,     { .i = +1 } },
 	/* { MODKEY,               XK_Tab,    rotate,      { .i = 0 } }, */
 
 	/* { MODKEY,               XK_grave,  spawn,       SETPROP("_TABBED_SELECT_TAB") }, */
